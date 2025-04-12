@@ -11,4 +11,4 @@ jobs:
     - name: Build Java package
       run: mvn clean install -f  Javarepo1/pom.xml
     - name: Sonarqube scan
-      run: mvn sonar:sonar -Dsonar.host.url=https://sonarcloud.io -Dsonar.projectKey=mksonarorg1_sonardemo -Dsonar.organization=mksonarorg1 -Dsonar.login=1aac875bbc06c37c3258af0e9287ba78b1415540 -f Javarepo1/pom.xml
+      run: mvn sonar:sonar -X -Dsonar.host.url=https://sonarcloud.io -Dsonar.projectKey=mksonarorg1_sonardemo -Dsonar.organization=mksonarorg1 -Dsonar.login=1aac875bbc06c37c3258af0e9287ba78b1415540 -f Javarepo1/pom.xml
